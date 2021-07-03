@@ -1,8 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital@1&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    color: whitesmoke;
-    background-color: rgb(36, 36, 36);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(36, 36, 36);
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Header Section */
@@ -14,7 +22,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 25px;
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid rgb(36, 36, 36);
     margin-bottom: none;
 }
 
@@ -30,25 +38,31 @@ nav {
 nav > a {
     text-decoration: none;
     padding-right: 15px;
-    color: whitesmoke;
+    color: rgb(36, 36, 36);
     font-size: 1.25rem;
 }
 
 /* Hero Section */
 
-#hero-image {
-    padding-top: none;
+#Intro {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
     margin-top: none;
-    min-width: 100%;
-    min-height: 600px;
-    background-image: url(../images/william-thomas-ny6tO4ItOEY-unsplash.jpg);
-    background-position: center;
+    max-width: 50%;
+    min-height: 200px;
 }
 
-#hero-image > h1 {
+#Intro > img {
+    border-radius: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+#Intro > h1 {
     margin-top: 0px;
-    padding-top: 300px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /* Photography Section */
@@ -63,24 +77,16 @@ nav > a {
     padding: 0px 25px;
 }
 
-#Photo-Gallery > h1 {
-    text-align: center;
-}
-
 #Photo-Gallery > h2 {
     text-align: center;
 }
 
 .Photos {
-    max-width: 45%;
+    max-width: 30%;
     height: auto;
     padding-top: 25px;
 }
 
-.Gallery-Link {
-    padding: 25px 0px 25px 0px;
-    text-align: center;
-}
 
 #Photo-Gallery a {
     text-align: center;
@@ -96,8 +102,58 @@ nav > a {
 /*Footer Section */
 
 footer {
+    margin-top: 50px;
+    max-height: 100px;
     padding: 5px 25px;
-    border-top: 2px solid whitesmoke;
+    border-top: 2px solid rgb(36, 36, 36);
     display: flex;
     justify-content: space-between;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+
+.Photos {
+    min-width: 45%;
+    height: auto;
+    padding-top: 25px;
+}
+
+#Intro > h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#Photo-Gallery > h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+}
+
+@media (max-width: 425px) {
+
+    .Photos {
+        min-width: 100%;
+        height: auto;
+        padding-top: 25px;
+    }
+
+    #Intro > h1 {
+        margin-top: 0px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    #Photo-Gallery > h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    footer h2 {
+        display: none;
+    }
+    
+    }
