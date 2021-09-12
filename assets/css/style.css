@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 
 body {
     margin: 0;
@@ -21,14 +21,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 25px;
+    padding: 0px 100px;
     border-bottom: 1px solid rgb(36, 36, 36);
-    margin-bottom: none;
 }
 
 header > h1 {
     vertical-align: middle;
-    text-decoration: underline solid 5px rgb(187, 187, 28);
+    text-decoration: underline solid 5px #ffc922;
 }
 
 nav {
@@ -41,7 +40,7 @@ nav > a {
     padding-right: 15px;
     color: white;
     font-size: 1.25rem;
-    text-decoration: underline solid 4px rgb(187, 187, 28);
+    text-decoration: underline solid 4px #ffc922;
 }
 
 /* Main Body */
@@ -59,6 +58,41 @@ main {
     width: 514px;
     height: 289px;
     margin-top: 75px;
+    border: solid 2px #ffc922;
+}
+
+/* About Page */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.bio {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.bio h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.bio p {
+    padding: 0 200px 0 200px;
+}
+
+.profile_pic {
+    max-width: 50%;
+    height: auto;
+    align-items: center;
+}
+
+.profile_pic img {
+    max-width: 50%;
+    max-height: auto;
 }
 
 
