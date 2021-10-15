@@ -67,7 +67,7 @@ main {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 25px auto;
+    margin: 75px auto;
 }
 
 .bio {
@@ -95,14 +95,83 @@ main {
     max-height: auto;
 }
 
+/* Services Page */
+
+.pages_headers {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.services_boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services_boxes h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.services_placeholder {
+    width: 40vw;
+    height: 30vh;
+    box-sizing: border-box;
+    background-color: rgb(0, 195, 255);
+}
 
 /* Media Queries */
 
 @media (max-width: 768px) {
+    .about {
+        display: inline-block;
+        text-align: center;
+        margin: 5px auto;
+    }
+    .bio {
+        max-width: 90%;
+        max-height: auto;
+    }
+    .bio h2 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .bio p {
+        padding: 10px 10px;
+    }
+    .profile_pic {
+        max-width: 90%;
+        height: auto;
+        align-items: center;
+    }
+    .profile_pic img {
+        max-width: 90%;
+        max-height: auto;
+    }
 
+    .services_boxes h3 {
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+    .services_placeholder {
+        width: 90vw;
+        height: 50vh;
+        box-sizing: border-box;
+        background-color: rgb(0, 195, 255);
+    }
 }
 
 
 @media (max-width: 425px) {
 
+    .services_placeholder {
+        width: 90vw;
+        height: 30vh;
+        box-sizing: border-box;
+        background-color: rgb(0, 195, 255);
+    }
 }
