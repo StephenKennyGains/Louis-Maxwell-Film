@@ -38,10 +38,15 @@ nav {
 nav > a {
     text-decoration: none;
     padding-right: 15px;
-    color: white;
+    color: #ffc922;
     font-size: 1.25rem;
-    text-decoration: underline solid 4px #ffc922;
 }
+
+nav > a:hover {
+    color: white;
+    text-decoration: underline solid 2px white;
+}
+
 
 /* Main Body */
 
@@ -125,19 +130,35 @@ main {
 /* Contact Page */
 
 .contact_methods {
-    max-width: 90vw;
+    max-width: 500px;
     height: auto;
-    margin: 0 auto;
+    text-align: center;
+    margin: 100px auto;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.contact_options {
-    display: flex;
-    justify-content: space-evenly;
+.contact_align i {
+    float: left;
+}
+
+.contact_align a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact_align a:hover {
+    color: #ffc922;
 }
 
 /* Media Queries */
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
     .about {
         display: inline-block;
         text-align: center;
